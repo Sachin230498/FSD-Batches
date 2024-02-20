@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Universal Selector Example</title>
+<style>
+    /* Universal selector */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Tag selector for paragraphs */
+    p {
+        color: blue;
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    /* ID selector for a specific paragraph */
+    #special-paragraph {
+        font-weight: bold;
+        color: red;
+    }
+
+    /* Class selector for special text */
+    .special-text {
+        font-style: italic;
+        text-decoration: underline;
+    }
+</style>
+</head>
+<body>
+
+<h1>Universal Selector Example</h1>
+
+<p>This is a paragraph.</p>
+
+<p>This is another paragraph with <span class="special-text">special text</span>.</p>
+
+<p id="special-paragraph">This is a special paragraph with an ID selector.</p>
+
+<p>This is a paragraph with <span class="special-text">more special text</span>.</p>
+
+</body>
+</html>

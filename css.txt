@@ -1,0 +1,240 @@
+1. What is CSS ?
+   CSS (Cascading Style Sheets) is a style sheet language used
+   for describing the presentation of a document written in
+   HTML (Hypertext Markup Language). CSS describes how HTML
+   elements should be displayed on a screen, paper, or
+   other media.
+
+2. To apply CSS to an HTML document, you have several methods:
+
+   a. Inline CSS: You can apply CSS directly to an HTML element
+      using the style attribute. This method is not recommended 
+      for large-scale styling as it mixes content with presentation
+      and can be difficult to maintain.
+
+     <p style="color: red; font-size: 16px;">This is a paragraph with inline CSS.</p>
+
+   b. Internal CSS: You can include CSS rules within a <style> tag in the <head>
+     section of your HTML document. This method allows you to define styles for
+     multiple elements within the same HTML file.
+
+     <!DOCTYPE html>
+<html>
+<head>
+    <title>Internal CSS Example</title>
+    <style>
+        p {
+            color: blue;
+            font-size: 18px;
+        }
+        .highlight {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a paragraph.</p>
+    <p class="highlight">This paragraph has a special class.</p>
+</body>
+</html>
+
+
+  c. External CSS: You can create a separate CSS file with
+    .css extension and link it to your HTML document using
+     the <link> element. This method is recommended for 
+     larger projects as it keeps HTML and CSS separate,
+      making it easier to manage and maintain.
+
+    Example of an external CSS file named styles.css:
+
+    /* styles.css */
+p {
+    color: blue;
+    font-size: 18px;
+}
+.highlight {
+    background-color: yellow;
+}
+
+
+3.  CSS properties
+    CSS properties are used to style HTML elements.
+    They control various aspects of an element's appearance,
+    such as its size, color, font, spacing, and positioning.
+    Here are some common CSS properties:
+
+    
+Color properties:
+
+color: Sets the color of text.
+background-color: Sets the background color of an element.
+
+
+Font properties:
+
+font-family: Specifies the font family for text.
+font-size: Sets the size of the font.
+font-weight: Sets the thickness of the font.
+
+
+Text properties:
+
+text-align: Aligns text horizontally within an element.
+text-decoration: Adds decoration to text (e.g., underline, line-through).
+text-transform: Specifies the capitalization of text (e.g., uppercase, lowercase).
+line-height: Sets the height of a line of text.
+
+
+Box model properties:
+
+width: Sets the width of an element.
+height: Sets the height of an element.
+margin: Sets the margin outside the border of an element.
+padding: Sets the padding inside the border of an element.
+border: Sets the border around an element.
+
+
+Positioning properties:
+
+position: Specifies the positioning method for an element (e.g., relative, absolute).
+top, right, bottom, left: Positions an element relative to its containing element.
+
+
+Display properties:
+
+display: Specifies how an element should be displayed (e.g., block, inline, inline-block).
+Flexbox properties (for flexible box layout):
+
+flex-direction: Specifies the direction of the flexible items.
+justify-content: Aligns items along the main axis of the flex container.
+align-items: Aligns items along the cross axis of the flex container.
+Grid properties (for grid layout):
+
+grid-template-columns, grid-template-rows: Defines the columns and rows of a grid container.
+grid-column, grid-row: Specifies the grid lines on which an item will be placed.
+Animation properties:
+
+animation: Specifies keyframe animations.
+transition: Specifies the transition effect when a property changes value.
+
+
+Background properties:
+
+background-image: Sets the background image for an element.
+background-repeat: Specifies how a background image should be repeated.
+background-position: Sets the starting position of a background image.
+background-size: Specifies the size of a background image.
+Box shadow properties:
+
+box-shadow: Adds a shadow effect to an element.
+
+
+Text shadow properties:
+text-shadow: Adds a shadow effect to text.
+
+
+Overflow properties:
+overflow: Specifies what happens if content overflows an element's box.
+overflow-x, overflow-y: Specifies the overflow behavior for horizontal and vertical axes separately.
+
+
+Visibility properties:
+visibility: Specifies whether an element is visible or hidden.
+
+
+Opacity properties:
+opacity: Specifies the transparency level of an element.
+
+
+Transform properties:
+transform: Applies transformations to an element (e.g., rotate, scale, translate).
+transform-origin: Specifies the origin point of a transformation.
+
+
+Cursor properties:
+cursor: Specifies the type of cursor to display when hovering over an element.
+
+Outline properties:
+outline: Sets the outline around an element.
+
+
+List properties:
+
+list-style-type: Specifies the type of list marker (e.g., disc, decimal, none).
+list-style-image: Sets an image as the list item marker.
+Positioning properties (for grid and flex layouts):
+
+For Grid Layout: grid-template-areas, grid-area, grid-gap, etc.
+For Flexbox Layout: flex-grow, flex-shrink, flex-basis, etc.
+
+
+Positioning properties:
+
+position: Specifies the positioning method for an element (e.g., relative, absolute, fixed, sticky).
+top, right, bottom, left: Specifies the position of a positioned element relative to its containing block.
+z-index: Specifies the stack order of an element.
+float: Specifies whether an element should float to the left, right, or none.
+clear: Specifies which sides of an element float elements are not allowed.
+overflow: Specifies what happens if content overflows an element's box.
+overflow-x, overflow-y: Specifies the overflow behavior for horizontal and vertical axes separately.
+
+Float properties:
+
+float: Specifies whether an element should float to the left, right, or none.
+clear: Specifies which sides of an element float elements are not allowed.
+
+
+Font styling properties:
+
+font-style: Specifies the style of the font (e.g., italic, oblique).
+font-variant: Specifies whether a font should be displayed in small caps.
+letter-spacing: Adjusts the spacing between characters in text.
+
+
+Text layout properties:
+
+word-spacing: Adjusts the spacing between words in text.
+white-space: Specifies how white space inside an element is handled.
+text-overflow: Specifies how overflowed text is indicated.
+word-wrap: Specifies whether long words can be broken and wrapped onto the next line.
+
+
+Text effects properties:
+
+text-transform: Controls the capitalization of text (e.g., uppercase, lowercase, capitalize).
+text-shadow: Adds a shadow effect to text.
+text-justify: Specifies the justification method for text.
+
+
+Table properties:
+
+border-collapse: Specifies whether table borders should be collapsed into a single border or not.
+table-layout: Specifies the algorithm used to layout table cells, columns, and rows.
+
+
+Counter properties:
+
+counter-reset: Creates or resets one or more counters.
+counter-increment: Increments one or more counters.
+
+
+List properties:
+
+list-style: Shorthand property for setting all the list properties in one declaration.
+list-style-position: Specifies the position of the list-item markers.
+
+
+User interface properties:
+
+appearance: Specifies how an element should appear (e.g., button, checkbox, progress-bar).
+resize: Specifies whether an element is resizable by the user.
+
+
+Pointer events properties:
+
+pointer-events: Specifies whether an element can be the target for pointer events.
+
+
+Scroll snap properties:
+
+scroll-snap-type: Defines how a container should behave when scrolling.
